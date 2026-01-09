@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Project - DAA Project Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar">
+    <div class="nav-container">
+        <div class="nav-brand">DAA Project Portfolio</div>
+        <ul class="nav-menu">
+            <li><a href="index.html">About Us</a></li>
+            <li><a href="course.html">About Course</a></li>
+            <li><a href="project.html" class="active">Course Project</a></li>
+            <li><a href="reflection.html">Reflection</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Hero -->
+<section class="hero hero-small">
+    <div class="container">
+        <h1 class="fade-in">Course Project</h1>
+        <p class="subtitle fade-in">
+            Nearest Cab Detection in Ride-Sharing Apps Using Dijkstra’s Algorithm
+        </p>
+    </div>
+</section>
+
+<!-- Project Content -->
+<section class="content-section">
+    <div class="container">
+
+        <div class="content-card slide-up">
+            <h2>Project Overview</h2>
+            <p>
+                In this course project, we worked on a real-world problem inspired by modern
+                ride-sharing platforms such as Uber and Ola. The objective was to identify
+                the nearest available cab for a user in an efficient and accurate manner.
+            </p>
+        </div>
+
+        <div class="content-card slide-up">
+            <h2>Problem Definition</h2>
+            <p>
+                Ride-sharing systems operate in dynamic environments where driver locations
+                change continuously. A naïve distance-based approach may fail due to road
+                networks, weighted paths, and real-world constraints.
+            </p>
+            <p>
+                Therefore, an algorithmic solution is required to guarantee optimal shortest
+                path computation within a short response time.
+            </p>
+        </div>
+
+        <div class="content-card slide-up">
+            <h2>Selection of Algorithms</h2>
+            <p>
+                As part of this project, we analyzed twelve algorithms including BFS, DFS,
+                Bellman–Ford, Floyd–Warshall, Kruskal’s, Prim’s, Brute Force, Binary Search,
+                Divide and Conquer, and the Greedy paradigm.
+            </p>
+            <p>
+                After comparison, we selected <strong>Dijkstra’s Algorithm</strong> because it
+                guarantees optimal shortest paths in weighted graphs with non-negative edges
+                and is widely used in navigation systems.
+            </p>
+        </div>
+
+        <div class="content-card slide-up">
+            <h2>Algorithm Explanation</h2>
+            <p>
+                The user and all available cabs are modeled as nodes in a graph. Edge weights
+                represent real-world distances calculated using the Haversine formula.
+            </p>
+            <p>
+                Dijkstra’s algorithm computes the shortest distance from the user node to all
+                cab nodes, and the cab with the minimum distance is selected.
+            </p>
+        </div>
+
+        <div class="content-card slide-up">
+            <h2>Implementation Summary</h2>
+            <p>
+                The project was implemented in C++ using a priority queue-based Dijkstra
+                algorithm. The system is menu-driven and allows dynamic input of user and
+                cab locations.
+            </p>
+        </div>
+
+        <div class="content-card slide-up">
+            <h2>Complexity Analysis</h2>
+            <p><strong>Time Complexity:</strong> O((V + E) log V)</p>
+            <p><strong>Space Complexity:</strong> O(V + E)</p>
+            <p>
+                Compared to brute-force approaches, this method is more accurate and scalable
+                for real-time systems.
+            </p>
+        </div>
+
+        <div class="content-card slide-up">
+            <h2>Conclusion</h2>
+            <p>
+                This project demonstrated the practical application of Design and Analysis
+                of Algorithms concepts in a real-world scenario. It strengthened our
+                understanding of algorithm selection, complexity analysis, and system design.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <p>&copy; 2024 DAA Project Portfolio | Aprameya, Amogh, Sharanabasava</p>
+    </div>
+</footer>
+
+<script src="js/scroll.js"></script>
+</body>
+</html>
